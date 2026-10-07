@@ -145,20 +145,6 @@ body {
 .eq span:nth-child(12) { height: 42%; animation-delay: .8s; }
 @keyframes bounce { 0%, 100% { transform: scaleY(0.5); } 50% { transform: scaleY(1); } }
 
-/* Countdown */
-.countdown { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 22px; }
-.cd-box {
-  min-width: 76px;
-  background: rgba(28, 25, 23, 0.8);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  border-radius: 14px;
-  padding: 10px 8px;
-}
-.cd-num { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; color: var(--amber-hot); font-variant-numeric: tabular-nums; }
-.cd-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
-.cd-sep { font-size: 26px; font-weight: 700; color: var(--pink); }
-.cd-note { margin-top: 12px; font-size: 13px; color: var(--muted); letter-spacing: 1px; }
-
 /* Notify form */
 .notify {
   display: flex; gap: 10px;
