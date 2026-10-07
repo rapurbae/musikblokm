@@ -187,13 +187,6 @@ body {
 }
 .socials a:hover { border-color: var(--amber); color: var(--amber-hot); }
 
-.scroll-hint {
-  position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%);
-  color: var(--muted); text-decoration: none; font-size: 22px;
-  animation: float 1.8s ease-in-out infinite;
-}
-@keyframes float { 50% { transform: translate(-50%, 8px); } }
-
 /* ---------- MARQUEE ---------- */
 .marquee {
   background: linear-gradient(90deg, var(--amber), var(--pink));
@@ -206,47 +199,6 @@ body {
 }
 .marquee-track { display: inline-flex; animation: slide 22s linear infinite; }
 @keyframes slide { to { transform: translateX(-50%); } }
-
-/* ---------- SECTION / CARDS ---------- */
-.section { max-width: 1100px; margin: 0 auto; padding: 84px 20px 30px; }
-.section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.6rem, 4vw, 2.4rem); text-align: center; margin-bottom: 36px; }
-.section-title em { color: var(--amber); font-style: normal; }
-
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
-.card {
-  background: var(--panel);
-  border: 1px solid #292524;
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: transform 0.2s, border-color 0.2s;
-}
-.card:hover { transform: translateY(-6px); border-color: rgba(245, 158, 11, 0.5); }
-.card img { width: 100%; height: 190px; object-fit: cover; display: block; }
-.card-body { padding: 20px 22px 24px; }
-.card-body h3 { font-family: 'Space Grotesk', sans-serif; font-size: 18px; margin-bottom: 8px; color: var(--amber-hot); }
-.card-body p { font-size: 14.5px; color: #d6d3d1; }
-
-/* ---------- LOCATION ---------- */
-.location { border-top: 1px solid #292524; border-bottom: 1px solid #292524; background: #141210; margin-top: 70px; }
-.location-inner {
-  max-width: 1100px; margin: 0 auto; padding: 60px 20px;
-  display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; align-items: center;
-}
-.location-inner .section-title { text-align: left; margin-bottom: 14px; }
-.location-inner p { color: #d6d3d1; font-size: 15.5px; }
-.location-inner strong { color: var(--amber-hot); }
-.location-list { list-style: none; display: grid; gap: 12px; }
-.location-list li {
-  background: var(--panel);
-  border: 1px solid #292524;
-  border-left: 4px solid var(--amber);
-  border-radius: 12px;
-  padding: 14px 18px;
-  font-size: 14.5px; color: #d6d3d1;
-}
-.location-list strong { font-size: 17px; }
-
-@media (max-width: 760px) { .location-inner { grid-template-columns: 1fr; } }
 
 /* ---------- FOOTER ---------- */
 .footer { text-align: center; padding: 44px 20px 54px; }
